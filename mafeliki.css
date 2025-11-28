@@ -1,97 +1,105 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    /* Inclut padding et border dans la taille totale des éléments */
 }
 
 body{
-    background-color: yellowgreen;
+    background-color: yellowgreen; 
+    /* Couleur de fond de toute la page */
 }
 
 /*Mise en forme de l'entête*/
 header{
-    background-color: #679;/*l'arrière plan est colorié en gris*/
+    background-color: #679; /* Couleur de fond (sera recouverte par le gradient) */
     background: linear-gradient(45deg, rgb(195, 255, 0), rgb(254, 30, 0));
-    padding: 17px;/*ajoute de l'espace à l'intérieur de la balise*/
-    text-align: center;/*allignement du text au centre*/
-    color: white;
-    font-size: 35px;/*changement de la taille de police*/
-
+    /* Dégradé de couleur en arrière-plan */
+    padding: 17px; /* Espacement interne */
+    text-align: center; /* Centrer le texte du header */
+    color: white; /* Texte blanc */
+    font-size: 35px; /* Taille du texte */
 }
 
 h1{
     color: ;
+    /* Propriété définie mais valeur vide → aucun effet */
 }
+
 /*Mise en forme de section*/
 section{
-    /*Option d'affichage sur différente disposition/taille de l'écran*/
     display:-webkit-flex;
     display: flex;
+    /* Affiche les sections en flexbox, compatible avec anciens navigateurs (prefixe webkit) */
 }
 
 p{
-    text-align: justify;
+    text-align: justify; 
+    /* Alignement justifié pour un rendu plus propre du texte */
 }
 
 h2{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration:underline;
+    text-align: center; /* Titre centré */
+    font-family: 'Times New Roman', Times, serif; /* Police serif classique */
+    text-decoration: underline; /* Soulignement */
 }
 
-
 nav{
-    width: 100%;
-    margin: 0px auto 40px auto;
-    background-color: orangered;
-    position: sticky;
-    top: 0;
+    width: 100%; /* La nav prend toute la largeur */
+    margin: 0px auto 40px auto; /* Marge bas de 40px, centré horizontalement */
+    background-color: orangered; /* Couleur de fond orange */
+    position: sticky; /* La nav reste collée en haut en scroll */
+    top: 0; /* Position du sticky */
     -webkit-flex:1;
     -ms-flex: 1;
+    /* Compatibilité flex anciennes versions */
 }
 
 nav li{
-    width: 25%;
-    text-align: center;
-    float: left;
+    width: 25%; /* Chaque élément de menu prend 25% du nav */
+    text-align: center; /* Texte centré */
+    float: left; /* Les li sont alignés horizontalement */
 }
 
 nav ul::after{
     content: "";
     display: table;
-    clear: both;
+    clear: both; 
+    /* Clearfix pour empêcher les flottants de déborder */
 }
 
 nav a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    border-bottom: 2px solid transparent;
-    padding: 10px 0px;
+    display: block; /* Lien cliquable sur toute la zone */
+    text-decoration: none; /* Retire le soulignement */
+    color: black; /* Texte noir */
+    border-bottom: 2px solid transparent; /* Bordure invisible servant pour le hover */
+    padding: 10px 0px; /* Espace vertical */
 }
 
 nav a:hover{
-    color: skyblue;
-    border-bottom: 2px solid silver;
+    color: skyblue; /* Couleur du texte au survol */
+    border-bottom: 2px solid silver; /* Affiche une bordure soulignée au hover */
 }
 
 table{
-    background-color:rgb(248, 252, 17); /*Changement de la couleur de l'arrière plan du tableau */
-    margin-left: 10px;  /* Ajoute une marge de 10px à gauche de l’ensemble du tableau */
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+    background-color:rgb(248, 252, 17); 
+    /* Couleur de fond jaune vif du tableau */
+    margin-left: 10px;  
+    /* Marge à gauche du tableau */
+    font-family: arial, sans-serif; /* Police du tableau */
+    border-collapse: collapse; /* Fusionne les bordures des cellules */
+    width: 100%; /* Le tableau prend toute la largeur */
 } 
 
 td, th {
-    border: solid 1px; /* Applique une bordure de 1px solide à la table, aux cellules <td> et aux en-têtes <th> */
-    border-radius: 3px;  /* Arrondit les coins des bordures (3px) */
-    text-align: left; /* Aligne le texte à gauche dans les cellules */
-    padding: 8px; /* Ajoute un espace intérieur de 8px autour du contenu des cellules */
-    margin-left: 20px; /* Ajoute une marge de 20px à gauche de l’ensemble du tableau */
+    border: solid 1px; /* Bordure simple de 1px */
+    border-radius: 3px; /* Coins arrondis */
+    text-align: left; /* Alignement du texte à gauche */
+    padding: 8px; /* Espace interne dans les cellules */
+    margin-left: 20px; /* Marge gauche (n'a pas d'effet sur td/th en général) */
 }
 
 footer{
-    text-align: center;
-    background-color: #777;
-    color: aliceblue;
-    padding: 17px;
+    text-align: center; /* Texte centré dans le footer */
+    background-color: #777; /* Couleur de fond gris */
+    color: aliceblue; /* Couleur du texte */
+    padding: 17px; /* Espace intérieur */
 }
