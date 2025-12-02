@@ -52,7 +52,7 @@ h2{
 nav{
     width: 100%; /* La nav prend toute la largeur */
     margin: 0px auto 40px auto; /* Marge bas de 40px, centré horizontalement */
-    background-color: orangered; /* Couleur de fond orange */
+    background-color: rgb(255, 122, 28); /* Couleur de fond orange */
     position: sticky; /* La nav reste collée en haut en scroll */
     top: 0; /* Position du sticky */
     -webkit-flex:1;
@@ -87,7 +87,7 @@ nav a:hover{
 }
 
 table{
-    background-color:rgb(248, 252, 17); 
+    background-color:rgb(105, 253, 0); 
     /* Couleur de fond jaune vif du tableau */
     margin-left: 2px; 
     /* Marge à gauche du tableau */
@@ -108,8 +108,38 @@ th{
     background-color: greenyellow;
 }
 
+form{
+    margin: 2px;
+    padding: 15px;
+    border: solid 1px;
+    border-radius: 3px;
+    background-color: aliceblue;
+    margin-inline: 35px;
+    margin-left: 20px;
+}
 
+input{/*on prend comme selecteur les input de type text*/
+    padding: 7px;/*ajoute de l'espace à l'intérieur de la balise <input>*/
+    margin: 5px;/*ajoute de l'espace en partant de la marge */
+    border: solid 2px;/*j'ajoute des bordures solide de couleur rouge de 2 pixel */
+    border-radius: 3px;/**/
+}
 
+select{
+    padding: 7px;/*ajoute de l'espace à l'intérieur de la balise <input>*/
+    margin: 5px;/*ajoute de l'espace en partant de la marge */
+    border: solid 2px;/*j'ajoute des bordures solide de couleur rouge de 2 pixel */
+    border-radius: 3px;/**/
+}
+
+.divCom{
+    text-align: center;    /* Centre le contenu */
+    margin-top: 20px;
+}
+.divCom textarea {
+    width: 80%;    /* Plus petit que 100% pour être bien centré */
+
+}
 footer{
     text-align: center; /* Texte centré dans le footer */
     background-color: #777; /* Couleur de fond gris */
