@@ -25,6 +25,10 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h3{
+    text-align: center;
+}
+
 /*Mise en forme de section*/
 section{
     display:-webkit-flex;
@@ -100,9 +104,11 @@ td, th {
     margin-left: 20px; /* Marge gauche (n'a pas d'effet sur td/th en général) */
 }
 
-a{
-    text-decoration: none;
+th{
+    background-color: greenyellow;
 }
+
+
 
 footer{
     text-align: center; /* Texte centré dans le footer */
