@@ -85,7 +85,7 @@ nav a:hover{
 table{
     background-color:rgb(248, 252, 17); 
     /* Couleur de fond jaune vif du tableau */
-    margin-left: 10px;  
+    margin-left: 2px; 
     /* Marge à gauche du tableau */
     font-family: arial, sans-serif; /* Police du tableau */
     border-collapse: collapse; /* Fusionne les bordures des cellules */
