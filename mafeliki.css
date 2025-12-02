@@ -20,8 +20,7 @@ header{
 }
 
 h1{
-    color: ;
-    /* Propriété définie mais valeur vide → aucun effet */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*Mise en forme de section*/
@@ -34,6 +33,8 @@ section{
 p{
     text-align: justify; 
     /* Alignement justifié pour un rendu plus propre du texte */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Changement de la police des paragraphe */
 }
 
 h2{
@@ -95,6 +96,10 @@ td, th {
     text-align: left; /* Alignement du texte à gauche */
     padding: 8px; /* Espace interne dans les cellules */
     margin-left: 20px; /* Marge gauche (n'a pas d'effet sur td/th en général) */
+}
+
+a{
+    text-decoration: none;
 }
 
 footer{
