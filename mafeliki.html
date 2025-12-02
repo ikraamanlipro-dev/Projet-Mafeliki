@@ -143,11 +143,14 @@
         </table>
     </div>
 
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/sbKDiNDd0Nk?autoplay=1&mute=1"></iframe>
+    
     <h2>Formulaire pour visiteurs</h2>
 
     <!-- Formulaire -->
-    <form id="contact">
-        <div>
+    <form id="contact">  
+
+        <div>   <!-- Groupe de champs : nom et prénom -->
             <label for="nom">Nom :</label>
             <input type="text" id="nom" name="nom" required>
 
@@ -156,15 +159,16 @@
         </div>
         <br><br>
 
-        <div>
+        <div>   <!-- Groupe de champs : email et téléphone -->
             <label for="email">Email :</label>
             <input type="email" id="email" name="email" required>
 
             <label for="telephone">Numéro de téléphone :</label>
             <input type="tel" id="telephone" name="telephone" required>
         </div>
-            <br><br>
-        <div>
+        <br><br>
+
+        <div>   <!-- Groupe de champs : village et liste de produits -->
             <label for="village">Village :</label>
             <input type="text" id="village" name="village" required>
 
@@ -174,19 +178,18 @@
                 <option value="banane">Banane</option>
                 <option value="tomate">Tomate</option>
             </select>
-        
-
         </div>
         <br><br>
 
-        <div class="divCom">
+        <div class="divCom">   <!-- Zone de commentaire avec bouton d'envoi -->
             <label for="commentaire">Commentaire :</label><br>
             <textarea id="commentaire" name="commentaire" rows="5"></textarea><br><br>
 
-            <input type="submit" value="Envoyer">
+            <input type="submit" value="Envoyer">   <!-- Bouton pour envoyer le formulaire -->
         </div>     
 
-    </form>
+    </form>   <!-- Fin du formulaire -->
+
 
     <footer>
         <!-- Pied de page -->
